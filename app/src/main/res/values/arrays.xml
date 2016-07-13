@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <string-array name="contacts">
+        <item>张三</item>
+        <item>李四</item>
+        <item>阿杜</item>
+        <item>王五</item>
+        <item>Fade</item>
+        <item>哈哈</item>
+        <item>嘻嘻</item>
+        <item>哥哥</item>
+        <item>猜猜</item>
+        <item>八阿哥</item>
+        <item>狄仁杰</item>
+        <item>额吉</item>
+        <item>弗利</item>
+        <item>小米</item>
+        <item>三星</item>
+        <item>欧弟</item>
+        <item>皮耶罗</item>
+    </string-array>
+
+</resources>

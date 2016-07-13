@@ -1,25 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="right">
+    android:orientation="vertical">
 
-    <com.poisonh.contacts.widgets.SideBarMenu
-        android:id="@+id/sbm_siderbarmenu"
-        android:layout_width="40dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"/>
+    <EditText
+        android:id="@+id/et"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_edittext"/>
 
-    <TextView
-        android:id="@+id/tv_tips"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:visibility="gone"
-        android:layout_centerInParent="true"
-        android:background="@drawable/shape_tips_bg"
-        android:gravity="center"
-        android:text="H"
-        android:textColor="#fff"/>
 
-</RelativeLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_contacts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="15dp"/>
+
+        <TextView
+            android:id="@+id/tv_tips"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_tips_bg"
+            android:gravity="center"
+            android:text="H"
+            android:textColor="#fff"
+            android:visibility="gone"/>
+
+        <com.poisonh.contacts.widgets.SideBarMenu
+            android:id="@+id/sbm_siderbarmenu"
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/sidermenu_bg"/>
+    </FrameLayout>
+
+
+</LinearLayout>
